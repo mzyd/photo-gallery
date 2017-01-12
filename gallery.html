@@ -3,12 +3,16 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Image Gallery</title>
+    <script type="text/javascript" src="scripts/showPic.js"></script>
   </head>
+
   <body>
+    <a href="www.baidu.com" onclick="console.log('ddd');return false;">test click tag of a</a>
     <h1>Snapshots</h1>
     <ul>
       <li>
-	<a href="images/1.jpg" title="A fireworks display">Fireworks</a>
+	<!--  使用 a 标签, 在点击的时候会默认进入另一个页面, 可以通过在 click 事件里 return false 来拦截事件. -->
+	<a href="images/1.jpg" title="A fireworks display" onclick="showPic(this); return false;">Fireworks</a>
       </li>
       <li>
 	<a href="images/2.jpg" title="A cup of black coffee">Coffee</a>
@@ -23,5 +27,7 @@
 	<a href="images/5.jpg" title="A tiger">Tiger</a>
       </li>
     </ul>
+    <img id="placeholder" src="" alt="my image gallery" />
+
   </body>
 </html>
