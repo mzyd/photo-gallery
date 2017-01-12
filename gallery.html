@@ -4,10 +4,10 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Image Gallery</title>
     <script type="text/javascript" src="scripts/showPic.js"></script>
+    <link rel="stylesheet" href="styles/gallery.css" type="text/css" media="screen" />
   </head>
 
   <body>
-    <a href="www.baidu.com" onclick="console.log('ddd');return false;">test click tag of a</a>
     <h1>Snapshots</h1>
     <ul>
       <li>
@@ -15,19 +15,20 @@
 	<a href="images/1.jpg" title="A fireworks display" onclick="showPic(this); return false;">Fireworks</a>
       </li>
       <li>
-	<a href="images/2.jpg" title="A cup of black coffee">Coffee</a>
+	<a href="images/2.jpg" title="A cup of black coffee" onclick="showPic(this); return false;">Coffee</a>
       </li>
       <li>
-	<a href="images/3.jpg" title="A red, red rose">Rose</a>
+	<a href="images/3.jpg" title="A red, red rose" onclick="showPic(this); return false;">Rose</a>
       </li>
       <li>
-	<a href="images/4.jpg" title="The famous clock">Big Ben</a>
+	<a href="images/4.jpg" title="The famous clock" onclick="showPic(this); return false;">Big Ben</a>
       </li>
       <li>
-	<a href="images/5.jpg" title="A tiger">Tiger</a>
+	<a href="images/5.jpg" title="A tiger" onclick="showPic(this); return false;">Tiger</a>
       </li>
     </ul>
     <img id="placeholder" src="" alt="my image gallery" />
+    <p id="description">Choose an image</p>
 
   </body>
 </html>
